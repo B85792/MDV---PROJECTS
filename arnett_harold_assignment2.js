@@ -168,22 +168,27 @@ var duration = " a couple of months ";
  	console.log("I thought" + duration + "was more than enough time to complete the remodel!");   
 
 // Return Values
-var buyMilk = function(givenCash) {
-	var pricePerGallon = 3,
-		wholeGallons;
-	if (givenCash < pricePerGallon) {
+var buyMaterials = function(givenCash) {
+	var pricePerHardwareItem = 2,
+		individualPiece;
+	if (givenCash < pricePerHardwareItem) {
 	console.log("That's not enough to buy anything!");
-	wholeGallons = 0;    
+	individualPiece = 0;    
   
   } 
      
-  wholeGallons = Math.floor(givenCash / pricePerGallon);
-  return wholeGallons;
+  individualPiece = Math.floor(3000 / 2);
+  return individualPiece;
 }; 
     
-var gotGallons = buyMilk(1);
- 	console.log("Thanks for buying " + gotGallons + " gallons of milk!");
+var gotMoney = "materials";
+ 	console.log("I got done and had " + gotMoney + " left over!");
  	
+ //Outcome
+ var time = "2 months ";
+
+ console.log("I had " + time + "and just enough sanity to get this project done!");
+ 
     
     
     
