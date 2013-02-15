@@ -52,7 +52,7 @@ var buyWood = function(givenCash) {
   
   } 
      
-  sheets = Math.floor(givenCash / pricePerBoard);
+  sheets = Math.floor(225 / 25);
   return sheets;
 }; 
     
@@ -89,21 +89,23 @@ var adjectives =[
     console.log("I will have the right wood for the job!");
     } else {
     console.log("I will have to choose a better wood to use!");
- var buyMilk = function(givenCash) {
-	var pricePerGallon = 3,
-		wholeGallons;
-	if (givenCash < pricePerGallon) {
+
+ var buyLumber = function(givenCash) {
+	var pricePerBoard =25,
+		sheetsOfOak;
+	if (givenCash < pricePerBoard) {
 	console.log("That's not enough to buy anything!");
-	wholeGallons = 0;    
+	sheetsOfOak = 9;    
   
   } 
      
-  wholeGallons = Math.floor(givenCash / pricePerGallon);
-  return wholeGallons;
+  sheetsOfOak = Math.floor(225 / 25);
+  return sheetsOfOak;
 }; 
     
-var gotGallons = buyMilk(1);
- 	console.log("Thanks for buying " + gotGallons + " gallons of milk!");   
+var gotLumber = buyLumber(9) ;
+ 	console.log("I have just enough money to buy " + gotLumber  +  " sheets of hard oak!");   
+
 // Number
 
 var doors = 25
@@ -122,21 +124,22 @@ var oak = 9
 console.log("I have no materials left!");
  
 };
-var buyMilk = function(givenCash) {
-	var pricePerGallon = 3,
-		wholeGallons;
-	if (givenCash < pricePerGallon) {
+var buyhardware = function(givenCash) {
+	var pricePerPiece = 2,
+		pieces;
+	if (givenCash < pricePerPiece) {
 	console.log("That's not enough to buy anything!");
-	wholeGallons = 0;    
+	pieces = 0;    
   
   } 
      
-  wholeGallons = Math.floor(givenCash / pricePerGallon);
-  return wholeGallons;
+  piece = Math.floor(160 / 2);
+  return piece;
 }; 
     
-var gotGallons = buyMilk(1);
- 	console.log("Thanks for buying " + gotGallons + " gallons of milk!");    
+var gotHardware = buyhardware(1);
+ 	console.log("Thanks for buying " + gotHardware + " pieces of hardware to complete the project!");    
+
 // String
 var a = true,
 	b = false,
@@ -147,21 +150,23 @@ var hrp = "My kitchen remodel ";{
 	var jobDone = hrp +  c  +  d;
 	console.log(hrp  +  c   + d);
  };   
- var buyMilk = function(givenCash) {
-	var pricePerGallon = 3,
-		wholeGallons;
-	if (givenCash < pricePerGallon) {
-	console.log("That's not enough to buy anything!");
-	wholeGallons = 0;    
+
+ var Duration = function(timeAllowance) {
+	var hoursPerDay = 8,
+		days;
+	if (timeAllowance < hoursPerDay) {
+	console.log("That's not long enough to get it all done!");
+		days = 0;    
   
   } 
      
-  wholeGallons = Math.floor(givenCash / pricePerGallon);
-  return wholeGallons;
+  days = Math.floor(60 / 8);
+  return days;
 }; 
     
-var gotGallons = buyMilk(1);
- 	console.log("Thanks for buying " + gotGallons + " gallons of milk!");   
+var duration = " a couple of months ";
+ 	console.log("I thought" + duration + "was more than enough time to complete the remodel!");   
+
 // Return Values
 var buyMilk = function(givenCash) {
 	var pricePerGallon = 3,
